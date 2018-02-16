@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    background-image: url("./../images/pink-dust.png");
+}
+
+header {
+    background: white;
+}
+
+div.header-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px
+}
+
+content {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+section,
+aside,
+footer {
+    background: white;
+    padding: 25px;
+}
+
+section {
+    margin: 25px 13px 25px 0;
+}
+
+aside {
+    margin: 25px 0 25px 13px;
+}
+section,
+aside {
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+}
+
+aside {
+    flex: 0 0 270px;
+}
+
+footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    background: #666666;
+    border-top: 10px solid #4aaaa5;
+}
+@media screen and (max-width: 960px) {
+    aside {
+        margin-right: 25px;
+    }
+
+    section {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    content {
+        display: block;
+    }
+
+    div.header-wrap,
+    section,
+    aside {
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 15px;
+        width: initial;
+    }
+
+    div.header-wrap {
+        padding: 0;
+    }
+}
+
+
+/* FONTS */
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+p,
+a,
+nav a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header h1 {
+    background: #4aaaa5;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav a {
+    padding: 0px 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+nav a:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+
+section h1 {
+    padding-bottom: 25px;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 25px;
+}
+
+section img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+aside h1 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 25px;
+}
+
+aside a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+
+aside a.git {
+    background-image: url(./../images/github.svg)
+}
+
+aside a.linkedin {
+    background-image: url(./../images/linkedin.svg)
+}
+
+aside a.stack {
+    background-image: url(./../images/stack.png);
+    background-size: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
