@@ -10,7 +10,7 @@ header {
 div.header-wrap {
     max-width: 960px;
     margin: 0 auto;
-    display: flex;
+    display: center;
     justify-content: space-between;
     align-items: center;
     font-size: 25px
@@ -56,21 +56,6 @@ footer {
     background: #666666;
     border-top: 10px solid #4aaaa5;
 }
-@media screen and (max-width: 960px) {
-    aside {
-        margin-right: 25px;
-    }
-
-    section {
-        margin-left: 25px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    content {
-        display: block;
-    }
-
     div.header-wrap,
     section,
     aside {
@@ -82,11 +67,9 @@ footer {
 
     div.header-wrap {
         padding: 0;
-    }
-}
-
-
+    } 
 /* FONTS */
+
 
 h1,
 h2,
@@ -94,6 +77,7 @@ h3 {
     margin-top: 0;
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
+    font-weight: 220;
 }
 
 p,
@@ -107,8 +91,8 @@ header h1 {
     color: white;
     padding: 15px;
     display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
 }
 
 nav a {
@@ -146,16 +130,8 @@ aside a {
     background-size: cover;
 }
 
-aside a.git {
-    background-image: url(./../images/github.svg)
-}
-
-aside a.linkedin {
-    background-image: url(./../images/linkedin.svg)
-}
-
 aside a.stack {
-    background-image: url(./../images/stack.png);
+    background-image: url();
     background-size: 54px;
     background-position: center;
     background-repeat: no-repeat;
