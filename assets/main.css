@@ -46,6 +46,9 @@ aside {
 aside {
     flex: 0 0 270px;
 }
+aside a.git {
+    background-image: url(./images/linkedin.jpg)
+}
 
 footer {
     position: fixed;
@@ -99,10 +102,7 @@ nav a {
     padding: 0px 10px;
     color: grey;
     text-decoration: none;
-}
-
-nav a:not(:last-child) {
-    border-right: 1px solid #eee;
+    text-align: center
 }
 
 section h1 {
@@ -123,18 +123,26 @@ aside h1 {
     margin-bottom: 25px;
 }
 
+aside a.git {
+    background-image: url("./../images/Git-128.png")
+}
+
+aside a.linkedin {
+    background-image: url("./../images/linkedin.png");
+}
+
+aside a.stack {
+    background-image: url("./../images/if_stack-overflow_1608397.png");
+    background-size: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 aside a {
     display: inline-block;
     width: 60px;
     height: 60px;
     background-size: cover;
-}
-
-aside a.stack {
-    background-image: url();
-    background-size: 54px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 footer p {
