@@ -27,7 +27,7 @@ section,
 aside,
 footer {
     background: white;
-    padding: 25px;
+    padding: 5px;
 }
 
 section {
@@ -45,9 +45,6 @@ aside {
 
 aside {
     flex: 0 0 270px;
-}
-aside a.git {
-    background-image: url(./images/linkedin.jpg)
 }
 
 footer {
@@ -68,11 +65,7 @@ footer {
         width: initial;
     }
 
-    div.header-wrap {
-        padding: 0;
-    } 
 /* FONTS */
-
 
 h1,
 h2,
@@ -99,6 +92,8 @@ header h1 {
 }
 
 nav a {
+    display:flex;
+    justify-content: flex-end;
     padding: 0px 10px;
     color: grey;
     text-decoration: none;
@@ -133,9 +128,6 @@ aside a.linkedin {
 
 aside a.stack {
     background-image: url("./../images/if_stack-overflow_1608397.png");
-    background-size: 54px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 aside a {
